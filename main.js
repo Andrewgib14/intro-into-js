@@ -3,39 +3,38 @@
 // 1.
 // What does `givenName` equal right now?
 let givenName;
-// A:
+// A:undefined
 
 
 // 2.
 // What is `givenName` set to right now?
 givenName = "Tim";
-// A:
-
+// A:"Tim"
 
 // 3.
 // What is `givenName` set to right now?
 givenName = givenName;
-// A:
+// A:"Tim"
 
 
 // 4.
 // What is `greeting` set to?
 let greeting = "Hello, how are you? " + givenName;
-// A:
+// A:"Hello, how are you? Tim"
 
 
 // 5.
 // What is `math` set to?
 let high = 50;
-let low  = 10;
+let low = 10;
 let math = high - low;
-// A:
+// A: 40
 
 
 // 6.
 // What is `math` set to?
 math = high - "5";
-// A:
+// A: 45
 
 
 // 7.
@@ -45,13 +44,14 @@ math = high - "5";
 let born = 1984;
 let today = 2017;
 // A:
+let age = "Time is " + (today - born) + " years old"
 
 
 // 8.
 // Adjust this code. Store some information in the following variables.
 // A:
-let yourName;
-let instructorName;
+let yourName = "Andrew";
+let instructorName = "Zach";
 
 
 // 9.
@@ -128,9 +128,9 @@ let f = (NaN == NaN);
 let thirsty = true;
 
 {
-  console.log("I'm parched!");
+	console.log("I'm parched!");
 } else {
-  console.log("I've had enough to drink.");
+	console.log("I've had enough to drink.");
 }
 
 // For questions 21 - 29 list which statement will be logged.
@@ -138,7 +138,7 @@ let thirsty = true;
 // 21.
 let x;
 
-if(x){
+if (x) {
 	console.log("True!");
 } else {
 	console.log("False!");
@@ -147,7 +147,7 @@ if(x){
 
 
 // 22.
-if(""){
+if ("") {
 	console.log("True!");
 } else {
 	console.log("False!");
@@ -159,7 +159,7 @@ if(""){
 // this expression will set x to NaN
 let x = 1 * undefined;
 
-if(x){
+if (x) {
 	console.log("True!");
 } else {
 	console.log("False!");
@@ -168,7 +168,7 @@ if(x){
 
 
 // 24.
-if(false){
+if (false) {
 	console.log("True!");
 } else {
 	console.log("False!");
@@ -177,7 +177,7 @@ if(false){
 
 
 // 25.
-if(-5 && 5){
+if (-5 && 5) {
 	console.log("True!");
 } else {
 	console.log("False!");
@@ -186,7 +186,7 @@ if(-5 && 5){
 
 
 // 26.
-if("Hello World!"){
+if ("Hello World!") {
 	console.log("True!");
 } else {
 	console.log("False!");
@@ -195,7 +195,7 @@ if("Hello World!"){
 
 
 // 27.
-if({}){
+if ({}) {
 	console.log("True!");
 } else {
 	console.log("False!");
@@ -204,7 +204,7 @@ if({}){
 
 
 // 28.
-if({name: "Yehuda Katz"}){
+if ({ name: "Yehuda Katz" }) {
 	console.log("True!");
 } else {
 	console.log("False!");
@@ -213,7 +213,7 @@ if({name: "Yehuda Katz"}){
 
 
 // 29.
-if(new Date()){
+if (new Date()) {
 	console.log("True!");
 } else {
 	console.log("False!");
